@@ -1,0 +1,11 @@
+# aliases
+alias uni="cd ~/code/uni/"
+alias dox="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias notes="cd ~/Documents/notes/"
+alias blog="cd ~/code/personal-web/blogit/"
+alias team="cd ~/code/uni/first_group_project/"
+alias con="source ~/.local/anaconda3/bin/activate"
+alias viconf="nvim ~/.config/nvim/"
+alias vi="nvim"
+alias tmux="TERM=xterm-256color tmux"

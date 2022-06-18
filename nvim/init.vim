@@ -38,7 +38,6 @@ set signcolumn=yes
 
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
-"Plug 'dracula/vim'
 Plug 'rakr/vim-one'
 "Plug 'ryanoasis/vim-devicons'
 "Plug 'SirVer/ultisnips'
@@ -63,6 +62,7 @@ Plug 'hrsh7th/nvim-cmp'
 " For luasnip users.
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'ThePrimeagen/harpoon'
 call plug#end()
 
 lua require('jonathan')
@@ -71,7 +71,7 @@ lua require('jonathan')
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
-if (empty($TMUX))
+"if (empty($TMUX))
   if (has("nvim"))
     "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -82,7 +82,7 @@ if (empty($TMUX))
   if (has("termguicolors"))
     set termguicolors
   endif
-endif
+"endif
 
 syntax enable
 colorscheme one 

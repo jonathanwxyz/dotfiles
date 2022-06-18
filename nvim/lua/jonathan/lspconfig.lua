@@ -45,3 +45,7 @@ require('lspconfig').gopls.setup(config({
 		},
 	},
 }))
+
+require('lspconfig').rust_analyzer.setup(config())
+
+require('lspconfig').tsserver.setup(config())
