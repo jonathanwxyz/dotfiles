@@ -41,8 +41,8 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
 
+# custom prompt
+PROMPT=' \[\033[01;34m\]\w\[\033[00m\] \$ '
+
 # get aliases
 . $ZDOTDIR/.zsh_aliases
-
-# custom prompt
-PS1=' \[\033[01;34m\]\w\[\033[00m\] \$ '
