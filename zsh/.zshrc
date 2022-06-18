@@ -4,7 +4,15 @@
 
 autoload -Uz promptinit
 promptinit
-prompt adam1
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+#RPROMPT=\$vcs_info_msg_0_
+PROMPT="%F{cyan}┏━━%f%F{green}%B[%b%~%B]%b%f "\$vcs_info_msg_0_$'\n'"%F{cyan}┗━%f %F{blue}%B>%b%f "
+zstyle ':vcs_info:git:*' formats '%F{240}(%b) %r%f'
+zstyle ':vcs_info:*' enable git
+#prompt adam1
 
 setopt histignorealldups sharehistory
 
@@ -40,9 +48,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
-
-# custom prompt
-PROMPT=' \[\033[01;34m\]\w\[\033[00m\] \$ '
 
 # get aliases
 . $ZDOTDIR/.zsh_aliases
