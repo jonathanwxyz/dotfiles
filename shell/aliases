@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# aliases
+alias uni="cd ~/code/uni/"
+alias dox="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias blog="cd ~/code/blog"
+alias con="source ~/.local/anaconda3/bin/activate"
+alias vc="nvim ~/.config/nvim/"
+alias vi="nvim"
+alias zc="nvim ~/.config/zsh/.zshrc"
+alias tn="tmux new-session -s"

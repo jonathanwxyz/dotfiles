@@ -1,12 +1,13 @@
 require("harpoon")
-local map = require("utils").map
-map("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", {silent = true})
-map("n", "<C-e>", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", {silent = true})
-map("n", "<leader>tc", ":lua require('harpoon.cmd-ui').toggle_quick_menu()<CR>", {silent = true})
-map("n", "<C-h>", ":lua require('harpoon.ui').nav_file(1)<CR>", {silent = true})
-map("n", "<C-t>", ":lua require('harpoon.ui').nav_file(2)<CR>", {silent = true})
-map("n", "<C-n>", ":lua require('harpoon.ui').nav_file(3)<CR>", {silent = true})
-map("n", "<C-s>", ":lua require('harpoon.ui').nav_file(4)<CR>", {silent = true})
+local nnoremap  = require("utils").nnoremap
+local silent = { silent = true }
+nnoremap("<leader>a", function() require('harpoon.mark').add_file() end, silent)
+nnoremap("<C-e>", function() require('harpoon.ui').toggle_quick_menu() end, silent)
+nnoremap("<leader>tc", function() require('harpoon.cmd-ui').toggle_quick_menu() end, silent)
+nnoremap("<C-j>", function() require('harpoon.ui').nav_file(1) end, silent)
+nnoremap("<C-k>", function() require('harpoon.ui').nav_file(2) end, silent)
+nnoremap("<C-l>", function() require('harpoon.ui').nav_file(3) end, silent)
+nnoremap("<C-;>", function() require('harpoon.ui').nav_file(4) end, silent)
 
 require("harpoon").setup({
     global_settings = {

@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Consider exporting ZDOTDIR=$HOME/.config/zsh in /etc/zsh/zshenv
 
 autoload -U colors && colors # load colors
@@ -81,7 +82,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # get aliases
-. $ZDOTDIR/.zsh_aliases
+source $XDG_CONFIG_HOME/shell/aliases
 
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 # # make install

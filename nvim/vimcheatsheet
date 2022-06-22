@@ -1,0 +1,11 @@
+:Ex -> opens netrw (file system)
+[n] S -> clears line and puts you into insert mode
+ctrl-w o -> closes all splits other than selected one
+[n] % -> goes to corresponding bracket
+[n] dt[] -> deletes up until a given character
+[n] F[] -> finds a the specified character in the line behind the cursor
+    ; -> next occurance
+    , -> previous occurance
+/ -> finds matching word
+    n -> next occurance
+    N -> previous occurance
