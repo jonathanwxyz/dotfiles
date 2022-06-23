@@ -9,3 +9,8 @@ ctrl-w o -> closes all splits other than selected one
 / -> finds matching word
     n -> next occurance
     N -> previous occurance
+[v] :norm -> executes commands on each highlighted line as if you were starting in normal mode
+:r FILE or !command -> writes the output of a file or command into your vim file
+:%s/word/replace/g -> Substitues all occurance of a [word] on a line (g) with its [replace]ment on all lines (%)
+ZZ -> writes file and quits
+ZQ -> quits file without writing

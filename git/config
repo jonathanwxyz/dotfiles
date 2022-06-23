@@ -1,0 +1,9 @@
+[user]
+    name = Jonathan 
+    email = 
+[includeIf "gitdir:~/code/uni/"]
+    path = ~/.config/git/uni-config
+[commit]
+    gpgSign = false
+[gc]
+    autoDetach = false
