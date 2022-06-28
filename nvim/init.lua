@@ -1,9 +1,9 @@
 -- maps leader to space
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
-require "options"
-require "mappings"
-require "plugins"
+require 'options'
+require 'mappings'
+require 'plugins'
 
 vim.cmd [[
     " syntax highlighting
@@ -18,4 +18,4 @@ vim.cmd [[
 	endif
 ]]
 
-require "jonathan"
+require 'jonathan'

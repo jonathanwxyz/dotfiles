@@ -13,10 +13,10 @@ vim.opt.autoindent = true              -- indent a new line the same amount as t
 vim.opt.smartindent = true
 vim.opt.number = true                  -- add line numbers
 -- vim.opt.wildmode = longest,list   -- get bash-like tab completions
-vim.opt.colorcolumn = "80"                  -- set an 80 column border for good coding style
+vim.opt.colorcolumn = '80'                  -- set an 80 column border for good coding style
 --filetype plugin indent on   --allow auto-indenting depending on file type, apparently enabled by default
-vim.opt.mouse = "a"                 -- enable mouse click
-vim.opt.clipboard=unnamedplus   -- using system clipboard
+vim.opt.mouse = 'a'                 -- enable mouse click
+vim.opt.clipboard = 'unnamedplus'   -- using system clipboard
 -- filetype plugin on
 vim.opt.cursorline = true              -- highlight current cursorline
 vim.opt.ttyfast = true                 -- Speed up scrolling in Vim
@@ -30,10 +30,10 @@ vim.opt.wrap = true
 --vim.opt.undodir=~/.vim/undodir
 --vim.opt.undofile
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = 'yes'
 -- vim.opt.noswapfile            -- disable creating swap file
 -- vim.opt.backupdir=~/.cache/vim -- Directory to store backup files.
-vim.opt.background = "dark" -- for the dark version
+vim.opt.background = 'dark' -- for the dark version
 -- open new split panes to right and below
 vim.opt.splitright = true
 vim.opt.splitbelow = true

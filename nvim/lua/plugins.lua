@@ -15,7 +15,7 @@ return require('packer').startup(function()
     use 'nvim-telescope/telescope-fzy-native.nvim'
     -- lsp
     use 'neovim/nvim-lspconfig'
-    -- treesitter
+    -- treesitterSource Code Pro
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     -- cmp autocomplete
     use 'hrsh7th/cmp-nvim-lsp'
@@ -31,6 +31,8 @@ return require('packer').startup(function()
     -- For luasnip users.
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+    -- commenting helper
+    use 'numToStr/Comment.nvim'
 
     if packer_bootstrap then
       require('packer').sync()
