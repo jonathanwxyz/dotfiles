@@ -33,6 +33,13 @@ return require('packer').startup(function()
     use 'saadparwaiz1/cmp_luasnip'
     -- commenting helper
     use 'numToStr/Comment.nvim'
+    -- premade snippets
+    use 'rafamadriz/friendly-snippets'
+    -- rice bottom dock
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
     if packer_bootstrap then
       require('packer').sync()
