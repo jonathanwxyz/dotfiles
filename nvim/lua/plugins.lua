@@ -40,6 +40,8 @@ return require('packer').startup(function()
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+    -- devicons
+    use 'ryanoasis/vim-devicons'
 
     if packer_bootstrap then
       require('packer').sync()
