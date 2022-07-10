@@ -7,8 +7,7 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    -- atom theme
-    use 'rakr/vim-one'
+    -- plenary
     use 'nvim-lua/plenary.nvim'
     -- telescope
     use 'nvim-telescope/telescope.nvim'
@@ -35,11 +34,17 @@ return require('packer').startup(function()
     use 'numToStr/Comment.nvim'
     -- premade snippets
     use 'rafamadriz/friendly-snippets'
-    -- rice bottom dock
+    -- theming
+    use 'folke/tokyonight.nvim'
     use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+      "olimorris/onedarkpro.nvim",
+      --[[ config = function()
+        require("onedarkpro").setup()
+        require("onedarkpro").load()
+      end ]]
     }
+    use 'navarasu/onedark.nvim'
+    use 'nvim-lualine/lualine.nvim'
     -- devicons
     use 'ryanoasis/vim-devicons'
 

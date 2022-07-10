@@ -5,11 +5,5 @@ require 'options'
 require 'mappings'
 require 'plugins'
 require 'autocmds'
-
-vim.cmd [[
-    syntax on
-	syntax enable
-	colorscheme one 
-]]
-
+require 'styling'
 require 'jonathan'
